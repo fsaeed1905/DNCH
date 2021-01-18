@@ -1,0 +1,74 @@
+﻿@model DNCH.Models.Resident
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Resident</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.First_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.First_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Last_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Last_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MiddleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MiddleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JoiningDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JoiningDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeavingDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeavingDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Resident_Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Resident_Address)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
